@@ -82,7 +82,14 @@ def youtube():
     youtube_search = input("Answer : ")
     link_youtube = "https://www.youtube.com/results?search_query="
     webbrowser.open(link_youtube + youtube_search)
-    exit()
+    print("wanna try again?\ntype y for yes\ntype n for no")
+    youtube_choose = "Answer : "
+    if youtube_choose == "y":
+        youtube()
+    elif youtube_choose == "n":
+        exit()
+    else:
+        wrongAns()
 
 def google():
     print("\n--- Google Searcher ---")
